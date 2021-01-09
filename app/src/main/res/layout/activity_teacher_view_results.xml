@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".TeacherViewResults">
+
+
+
+    <RelativeLayout
+        android:id="@+id/view_class_results"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/relativelayout_bg"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/work" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/imv"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/raleway_semibold"
+            android:text="View Class Results"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="12dp"
+        android:id="@+id/view_student_results"
+        android:layout_marginRight="20dp"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentEnd="true"
+
+        android:background="@drawable/relativelayout_bg"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/student2"
+            android:id="@+id/imv1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/imv1"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="center"
+            android:text="View Student Results" />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/view_comp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="See how pupils performed on your tests"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162805135649",
+    "firebase_url": "https://soma-5814f.firebaseio.com",
+    "project_id": "soma-5814f",
+    "storage_bucket": "soma-5814f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162805135649:android:b60173b7dc6b30b5b4e660",
+        "android_client_info": {
+          "package_name": "com.mackvel.soma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162805135649-b7ucdt4m4d65ri3o4mvtqeqftm2upsq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH6rqydYK4MgPgdJzrrgIX68F2NI0uUek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162805135649-b7ucdt4m4d65ri3o4mvtqeqftm2upsq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

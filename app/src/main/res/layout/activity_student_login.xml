@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fff"
+    tools:context=".StudentLoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relative_layout1"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_icon"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/email_image"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="#a8d0f4"
+                    android:hint="Enter your email..."
+                    android:layout_toRightOf="@+id/email_image"
+                    android:background="#00000000"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relative_layout2"
+                android:layout_below="@id/relative_layout1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password_icon"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/password_image"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/password"
+                    android:textSize="16dp"
+                    android:textColorHint="#a8d0f4"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Enter your password..."
+                    android:layout_toRightOf="@+id/password_image"
+                    android:background="#00000000"
+
+                    />
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+
+                android:layout_below="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2693f1"
+                android:layout_centerHorizontal="true"
+                android:text="Login As Student" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_bg1"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:layout_below="@+id/relative_layout2"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#2693f1" />
+
+
+            <!--    <TextView-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:id="@+id/forgot_password"-->
+            <!--        android:gravity="center"-->
+            <!--        android:layout_alignParentRight="true"-->
+            <!--        android:layout_marginTop="20dp"-->
+            <!--        android:layout_below="@+id/btn_login"-->
+            <!--        android:text="forgot your password"-->
+            <!--        android:textColor="@color/colorPrimaryDark"-->
+            <!--        />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_up_student"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/btn_login"
+                android:text="Sign up as Student here"
+                android:textColor="#2693f1"
+                />
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView5"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/illustration" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

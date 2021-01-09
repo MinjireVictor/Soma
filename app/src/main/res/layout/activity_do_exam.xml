@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoExamActivity">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Doing Exam..." />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/iv_internet"
+        android:layout_toRightOf="@+id/tv1"
+      />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"
+        android:id="@+id/view"
+       android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv1"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+
+        android:fontFamily="@font/raleway"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/stop_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="10:00" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/stop_time"
+        android:fontFamily="@font/raleway"
+
+        android:text="Stop" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"
+        android:id="@+id/view2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/time_left"
+        />
+
+    <TextView
+        android:id="@+id/tv_questionNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="1" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_toRightOf="@+id/tv_questionNo"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/tv_all_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_questionNo"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/optionA"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_question"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_bg2"
+                android:fontFamily="@font/raleway"
+                android:text="A" />
+
+
+            <Button
+                android:id="@+id/optionB"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/optionA"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg2"
+                android:fontFamily="@font/raleway"
+
+                android:text="B" />
+
+            <Button
+                android:id="@+id/optionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/optionB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+
+                android:background="@drawable/button_bg2"
+                android:fontFamily="@font/raleway"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/optionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/optionC"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg2"
+                android:fontFamily="@font/raleway"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="D" />
+
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="#000"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Question" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_imageView"
+                />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/optionD"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp">
+
+                <RelativeLayout
+
+                    android:id="@+id/bt_submit_exam"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="112dp"
+                    android:background="@drawable/relativelayout_bg2"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/start" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/imv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Finish" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="112dp"
+                    android:id="@+id/previous"
+                    android:background="@drawable/relativelayout_bg2"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imv2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ret" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/imv2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Previous" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

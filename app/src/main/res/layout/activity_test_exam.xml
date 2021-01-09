@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestExamActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Uploading Exam Papers..."
+        android:textSize="10dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/iv_internet"
+        android:layout_toRightOf="@+id/tv1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"
+        android:id="@+id/view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv1"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="70dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_page1"
+            android:src="@drawable/image_bg"
+            android:layout_marginTop="15dp"
+            />
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/upload2"
+                   android:id="@+id/iv_upload"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="20dp"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/iv_upload"
+                   android:layout_marginLeft="10dp"
+                   android:fontFamily="@font/raleway_medium"
+                   android:textColor="#000"
+                   android:text="Upload" />
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/removee"
+                   android:id="@+id/iv_remove"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginRight="22dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_alignParentRight="true" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/iv_upload"
+                   android:layout_marginLeft="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="15dp"
+                   android:fontFamily="@font/raleway_medium"
+                   android:textColor="#000"
+                   android:text="Remove" />
+
+           </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_page1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Page 1" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_page2"
+                android:layout_marginTop="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload2"
+                    android:id="@+id/iv_upload2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload2"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Upload" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/removee"
+                    android:id="@+id/iv_remove2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Remove" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_page2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_semibold"
+
+                android:text="Page 2" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_page3"
+                android:layout_marginTop="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload2"
+                    android:id="@+id/iv_upload3"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload3"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Upload" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/removee"
+                    android:id="@+id/iv_remove3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_remove3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Remove" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_page3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_semibold"
+
+                android:text="Page 3" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_page4"
+                android:layout_marginTop="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload2"
+                    android:id="@+id/iv_upload4"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload4"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Upload" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/removee"
+                    android:id="@+id/iv_remove4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Remove" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_page5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_semibold"
+
+                android:text="Page 5" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_page6"
+                android:layout_marginTop="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload2"
+                    android:id="@+id/iv_upload5"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload5"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Upload" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/removee"
+                    android:id="@+id/iv_remove5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Remove" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_page6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_semibold"
+
+                android:text="Page 6" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_page7"
+                android:layout_marginTop="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload2"
+                    android:id="@+id/iv_upload6"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload6"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Upload" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/removee"
+                    android:id="@+id/iv_remove6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000"
+                    android:text="Remove" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_page7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_semibold"
+
+                android:text="Page 7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_create_marking_scheme"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg1"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Create Marking Scheme"
+        android:textAllCaps="false"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>

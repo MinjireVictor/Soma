@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentSearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_layout1"
+        android:padding="12dp"
+        android:layout_height="210dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_layout"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/search"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:ems="10"
+                android:fontFamily="@font/raleway"
+                android:hint="Type student name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#a8d0f4" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/search" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_layout2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/relative_layout"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/school_icon"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/school_icon"
+                android:layout_centerVertical="true"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/school_icon"
+                android:background="#00000000"
+                android:textSize="16dp"
+                android:fontFamily="@font/raleway"
+                android:hint="Enter subject..."
+                android:textColor="#000"
+                android:textColorHint="#a8d0f4" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_layout3"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative_layout2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/schoolcode_icon"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/school_code_icon"
+                android:layout_centerVertical="true"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/exam"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/school_code_icon"
+                android:background="#00000000"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:fontFamily="@font/raleway"
+                android:hint="Enter exam..."
+                android:textColor="#000"
+                android:textColorHint="#a8d0f4" />
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout1"
+        />
+</RelativeLayout>

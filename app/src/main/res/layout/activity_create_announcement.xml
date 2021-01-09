@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAnnouncementActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relative_layout"
+        android:background="@drawable/backbround2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Announcement"
+            android:textColor="#fff"
+            android:textSize="23dp"
+           android:layout_centerInParent="true"
+            android:id="@+id/text"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/relative_layout"
+        android:paddingBottom="20dp"
+        android:layout_above="@+id/bt_announce"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relative_layout1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/relative_layout"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/advertising"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/email_image"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/et_anouncement"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/email_image"
+                    android:background="#00000000"
+                    android:fontFamily="@font/raleway"
+                    android:hint="Type your announcement..."
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="4"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Announcement type"
+                android:layout_below="@+id/relative_layout1"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:id="@+id/textView"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="15dp"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maths Announcement"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:id="@+id/maths_announcement"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English Announcement"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:id="@+id/english_announcement"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kiswahili Announcement"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:id="@+id/kiswahili_announcement"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Science Announcement"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:id="@+id/science_announcement"
+                    android:onClick="onRadioButtonClicked"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="socialstudies Announcement"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:id="@+id/socialstudies_announcement"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/cre_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Cre Announcement"
+                    android:textSize="15dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_group"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Enter the grade for which this announcement is meant" />
+            <AutoCompleteTextView
+                android:id="@+id/et_grade"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/relativelayout_bg2"
+                android:ems="10"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/raleway"
+                android:hint="Enter Grade"
+                android:inputType="number"
+                android:padding="10dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/bt_announce"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_bg1"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Announce" />
+
+</RelativeLayout>

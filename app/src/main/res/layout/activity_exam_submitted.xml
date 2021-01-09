@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ExamSubmittedActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:srcCompat="@drawable/comp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+       />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Exam has been submitted succesfully"
+
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/view_results"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_bg1"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="View Results"
+        android:textAllCaps="false"
+        android:textColor="@color/blue" />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/tick"
+        android:layout_toRightOf="@id/textView9"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="15dp"
+        app:srcCompat="@drawable/back" />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".FinishSetExam">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/comp2"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Test has been set succesfully" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/tick"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_toRightOf="@id/tv1"
+
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Enter test duration to complete" />
+
+    <EditText
+        android:id="@+id/et_hours"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relativelayout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/raleway"
+        android:hint="hr(s)"
+        android:inputType="number"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/colon"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="30dp"
+
+        android:text=":" />
+
+    <EditText
+        android:id="@+id/et_minutes"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv2"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relativelayout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/raleway"
+        android:hint="min"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/bt_submit_exam"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_bg1"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Submit Exam"
+        android:textAllCaps="false"
+        android:textColor="@color/blue" />
+</RelativeLayout>

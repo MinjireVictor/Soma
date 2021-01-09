@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TeacherLoginActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:paddingBottom="25dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relative_layout1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textView"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_icon"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/email_image"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/email_image"
+                    android:background="#00000000"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/raleway"
+                    android:hint="Enter your email..."
+                    android:textColor="#000"
+                    android:textColorHint="#a8d0f4"
+
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relative_layout2"
+                android:layout_below="@id/relative_layout1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password_icon"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/password_image"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/password_image"
+                    android:background="#00000000"
+                    android:fontFamily="@font/raleway"
+                    android:hint="Enter your password..."
+                    android:textColor="#000"
+                    android:textColorHint="#a8d0f4"
+
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relative_layout3"
+                android:layout_below="@id/relative_layout2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/schoolcode_icon"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/school_code_icon"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/school_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/school_code_icon"
+                    android:background="#00000000"
+                    android:fontFamily="@font/raleway"
+                    android:hint="Enter your school code..."
+                    android:textColor="#000"
+                    android:textColorHint="#a8d0f4"
+
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/imageView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Login As Teacher"
+                android:textColor="#2693f1"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/relative_layout3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg1"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Login"
+                android:textColor="#2693f1" />
+
+
+            <!--    <TextView-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:id="@+id/forgot_password"-->
+            <!--        android:gravity="center"-->
+            <!--        android:layout_alignParentRight="true"-->
+            <!--        android:layout_marginTop="20dp"-->
+            <!--        android:layout_below="@+id/btn_login"-->
+            <!--        android:text="forgot your password"-->
+            <!--        android:textColor="@color/colorPrimaryDark"-->
+            <!--        />-->
+            <TextView
+                android:id="@+id/sign_up_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_login"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Sign up as Teacher here"
+                android:textColor="#2693f1" />
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView5"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                app:srcCompat="@drawable/illustration" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

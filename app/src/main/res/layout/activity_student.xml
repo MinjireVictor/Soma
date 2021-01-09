@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".StudentActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_logout"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/horizontal_scrollview"
+                android:layout_below="@+id/relative_layout"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/do_exam"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_above="@+id/btn_logout"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/relativelayout_bg"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/test" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:text="Do Closed Test" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/do_open_questions"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_above="@+id/btn_logout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/relativelayout_bg"
+                        android:paddingTop="10dp">
+                        <ImageView
+                            android:id="@+id/imv5"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/open" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imv5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="Do Open Test" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/do_exam_papers"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_above="@+id/btn_logout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/relativelayout_bg"
+                        android:padding="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imv3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/uploadedpapers" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imv3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="Do Exam Papers" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/view_exam"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_above="@+id/btn_logout"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="20dp"
+
+                        android:background="@drawable/relativelayout_bg"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/imv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/exam" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imv1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="View Results" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView
+
+                android:id="@+id/anim_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/isometric_student" />
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anim_imageView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:elevation="8dp"
+                android:background="@drawable/relativelayout_bg2">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/iv_announce"
+                    android:padding="12dp"
+                    android:background="@color/colorAccent"
+                    android:src="@drawable/advertising"
+                    />
+                <TextView
+                    android:id="@+id/tv_announcements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_announce"
+                    android:text="Announcements :"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_maths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_announcements"
+                    android:text="Maths :  "
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_maths_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_announcements"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_maths"
+                    android:layout_toRightOf="@+id/tv_maths"
+                    android:text=" "
+                    android:textSize="14dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_maths_announcement"
+                    android:text="English :  "
+
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_english_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_maths_announcement"
+                    android:layout_toEndOf="@+id/tv_english"
+                    android:layout_toRightOf="@+id/tv_maths"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text=" "
+                    android:textSize="14dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_kiswahili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_english_announcement"
+                    android:text="Kiswahili :  "
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_kiswahili_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_english_announcement"
+                    android:layout_toEndOf="@+id/tv_english"
+                    android:layout_toRightOf="@+id/tv_maths"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text=" "
+                    android:textSize="14dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_science"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_kiswahili_announcement"
+                    android:text="Science :  "
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_science_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_kiswahili_announcement"
+                    android:layout_toEndOf="@+id/tv_science"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_science"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text=" "
+                    android:textSize="14dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_socialstudies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_science_announcement"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Social studies :  "
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_socialstudies_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_science_announcement"
+                    android:layout_toEndOf="@+id/tv_socialstudies"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_socialstudies"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text=" "
+                    android:textSize="14dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_socialstudies_announcement"
+                    android:text="Cre :  "
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_cre_announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_socialstudies_announcement"
+                    android:layout_toEndOf="@+id/tv_cre"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_cre"
+                    android:paddingRight="10dp"
+                    android:text=" "
+                    android:textSize="14dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="#000" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tv_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tv_student_name"
+        android:layout_toStartOf="@+id/tv_student_name"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Hello :"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:background="#707070"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#2f2e41"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
